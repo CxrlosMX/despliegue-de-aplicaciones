@@ -7,6 +7,7 @@ package mis_applets;
 
 import javax.swing.JApplet;
 import javax.swing.JLabel;
+import javax.swing.SwingConstants;
 
 /**
  *
@@ -23,7 +24,7 @@ public class HolaAlumnos extends JApplet { //Heredamos de la clase JApplet
     @Override
     public void init() {
         //Creamos el mensaje que queremos que aparezca
-        JLabel rotulo=new JLabel("Hola Alumnos");
+        JLabel rotulo=new JLabel("Hola Alumnos", SwingConstants.CENTER); //Utilizamos esta intrucción para centrar nuestro texto 
         
         //Agregamos nuestro mensaje a nuestro applet
         add(rotulo);
